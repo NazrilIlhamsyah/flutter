@@ -1,6 +1,5 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'column.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,16 +18,27 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text("Latihan"),
         ),
-        body: Center(
-          child: Text(
-            "Hallo Dunia",
-            style: TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
-              color: Colors.blue,
-              backgroundColor: Colors.blueGrey,
-            ),
-          ),
+        body: ColumnWidget(),
+      ),
+    );
+  }
+}
+
+class WidgetPertama extends StatelessWidget {
+  const WidgetPertama({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text(
+        "Hallo Dunia",
+        style: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+          color: Colors.blue,
+          backgroundColor: Colors.blueGrey,
         ),
       ),
     );
