@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'container_widget.dart';
 import 'column_widget.dart';
 import 'row_widget.dart';
+import 'latihan.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Latihan Flutter",
       home: Scaffold(
         appBar: AppBar(
@@ -20,15 +22,16 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text("Latihan"),
         ),
-        body: Column(
-          children: [
-            RowWidget(),
-            Padding(padding: EdgeInsets.only(top: 10)),
-            ColumnWidget(),
-            Padding(padding: EdgeInsets.only(top: 10)),
-            ContainerWidget(),
-          ],
-        ),
+        body: Latihan(),
+        //  Column(
+        //   children: [
+        //     RowWidget(),
+        //     Padding(padding: EdgeInsets.only(top: 10)),
+        //     ColumnWidget(),
+        //     Padding(padding: EdgeInsets.only(top: 10)),
+        //     ContainerWidget(),
+        //   ],
+        // ),
       ),
     );
   }
