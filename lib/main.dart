@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'column.dart';
+import 'container_widget.dart';
+import 'column_widget.dart';
+import 'row_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,11 +16,19 @@ class MyApp extends StatelessWidget {
       title: "Latihan Flutter",
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 9, 236, 66),
+          backgroundColor: Color.fromARGB(255, 9, 100, 236),
           centerTitle: true,
           title: Text("Latihan"),
         ),
-        body: ColumnWidget(),
+        body: Column(
+          children: [
+            RowWidget(),
+            Padding(padding: EdgeInsets.only(top: 10)),
+            ColumnWidget(),
+            Padding(padding: EdgeInsets.only(top: 10)),
+            ContainerWidget(),
+          ],
+        ),
       ),
     );
   }

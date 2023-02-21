@@ -9,8 +9,8 @@ class ColumnWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Text("Nasi goreng + Teh jeruk panas"),
-        Text("Nasi kuning+ Teh jeruk dingin "),
-        Text("Vegetable + Black Coffe"),
+        Text("Nasi kuning + Teh jeruk dingin"),
+        Text("Nasi uduk + Black Coffe"),
       ],
     );
   }
