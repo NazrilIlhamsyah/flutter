@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:uji/List_view/list_view.dart';
+import 'package:uji/List_view/list_view_builder.dart';
+import 'package:uji/latihan/latihan_list.dart';
 import 'container_widget.dart';
 import 'column_widget.dart';
 import 'row_widget.dart';
@@ -22,7 +25,7 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text("Latihan"),
         ),
-        body: Latihan(),
+        body: LatihanList(),
         //  Column(
         //   children: [
         //     RowWidget(),
